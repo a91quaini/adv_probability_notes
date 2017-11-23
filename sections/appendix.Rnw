@@ -1,0 +1,41 @@
+\documentclass[../probability.Rnw]{subfiles}
+
+\begin{document}
+
+\newpage
+\setcounter{section}{0}
+\renewcommand{\thesection}{APPENDIX \Alph{section}}
+\renewcommand{\theequation}{\Alph{section}\arabic{equation}}
+\setcounter{equation}{0}
+\appendix
+
+\makeatletter
+\renewcommand{\@seccntformat}[1]{Appendix {\csname the#1\endcsname}\hspace{0.5em}}
+\makeatother
+
+\phantomsection
+\addcontentsline{toc}{section}{Appendices}
+\singlespacing
+\renewcommand{\theequation}{A-\arabic{equation}}
+
+\section{Background}
+
+\begin{definition}
+A \textbf{set} is a well-defined collection of distinct mathematical objects.
+\end{definition}
+
+\begin{definition}
+Given two sets $A$ and $B$, the \textbf{set difference} of $A$ and $B$ is
+defined: $B\setminus A:=\ \{x\ \text{in}\ B,\ x\ \text{not in}\ A\}$.
+\end{definition}
+
+\begin{definition}
+The \textbf{power set} of a set $\Omega$, denoted $\mathcal{P}(\Omega)$,
+is the set of all subsets of $\Omega$. i.e., 
+\begin{equation*}
+\mathcal{P}(\Omega):=\ \{A\ \text{subset of}\ \Omega\}.
+\end{equation*}
+\end{definition}
+
+
+\end{document}

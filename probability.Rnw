@@ -1,0 +1,56 @@
+\documentclass{article}
+
+\setlength{\headheight}{10pt}
+\setlength{\headsep}{15pt}
+\setlength{\topmargin}{-25pt}
+\setlength{\topskip}{0in}
+\setlength{\textheight}{8.7in}
+\setlength{\footskip}{0.3in}
+\setlength{\oddsidemargin}{0.0in}
+\setlength{\evensidemargin}{0.0in}
+\setlength{\textwidth}{6.5in}
+\usepackage{setspace}
+\setstretch{1.2}
+\setlength{\parskip}{5pt}
+\setlength{\parindent}{0pt}
+
+\usepackage{subfiles}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{bm}
+\newtheorem{definition}{Definition}
+\newtheorem{proposition}{Proposition}
+\newtheorem{theorem}{Theorem}
+\renewcommand\qedsymbol{QED}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=red,
+}
+
+\begin{document}
+
+%% Title
+\begin{center}
+\textbf{\huge Pro$\bm{\beta}\bm{\alpha}\bm{\beta}$ili$\bm{\tau}$y Th$\bm{\epsilon}$ory}
+\end{center}
+\vspace{1cm}
+
+%% Table of contents
+\tableofcontents
+\newpage
+
+%% Sections
+\subfile{sections/dynkin_systems.Rnw}
+
+%% Appendix
+\subfile{sections/appendix.Rnw}
+
+%% bibliography
+
+\end{document}

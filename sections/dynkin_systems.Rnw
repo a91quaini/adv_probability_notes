@@ -1,0 +1,43 @@
+\documentclass[../probability.Rnw]{subfiles}
+
+\begin{document}
+
+\section{Dynkin systems}
+
+\begin{definition}
+A \textbf{Dynkin system} on a set $\Omega$ is a subset $\mathcal{D}$
+of the power set $\mathcal{P}(\Omega)$, with the following properties:
+\begin{enumerate}
+\item $\Omega \in \mathcal{D}$;
+\item $A,B \in \mathcal{D},\ A\subset B\ 
+\Longrightarrow\ B\setminus A \in \mathcal{D}$;
+\item $A_n \in \mathcal{D},\ A_n\subset A_{n+1},\ n\geq 1\
+\Longrightarrow\ \bigcup_{i=1}^{\infty}A_n \in \mathcal{D}$.
+\end{enumerate}
+\end{definition}
+
+\begin{definition}
+Let $\mathcal{A}$be a subset of $\mathcal{P}(\Omega)$.
+The \textbf{Dynkin system generated} by $\mathcal{A}$ is the
+Dynkin system on $\Omega$, denoted $\mathcal{D}(\mathcal{A})$,
+equal to the intersection of all Dynkin systems on $\Omega$
+which contain $\mathcal{A}$. i.e.,
+\begin{equation*}
+\mathcal{D}(\Omega):=\ \{\mathcal{D}\ \text{Dynkin systems on}\ 
+\Omega:\ \mathcal{A}\subset\mathcal{D}\}.
+\end{equation*}
+\end{definition}
+
+\begin{definition}
+A $\bm{\sigma-}$\textbf{algebra} on a set $\Omega$ is a subset $\mathcal{F}$
+of the power set $\mathcal{P}(\Omega)$ with the following properties:
+\begin{enumerate}
+\item $\Omega \in \mathcal{F}$;
+\item $A \in \mathcal{F}\ 
+\Longrightarrow\ \Omega\setminus A=:A^c \in \mathcal{F}$;
+\item $A_n \in \mathcal{F},\ n\geq 1\
+\Longrightarrow\ \bigcup_{i=1}^{\infty}A_n \in \mathcal{F}$.
+\end{enumerate}
+\end{definition}
+
+\end{document}
